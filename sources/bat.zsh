@@ -4,6 +4,6 @@ subcommand)
   bat cache --help | bat --color=always -plhelp
   ;;
 *)
-  [[ -f ${realpath#--*=} ]] && bat ${realpath#--*=} || less ${realpath#--*=}
+  less ${realpath#--*=}
   ;;
 esac

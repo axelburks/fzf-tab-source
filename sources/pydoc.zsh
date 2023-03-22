@@ -1,6 +1,7 @@
-# :fzf-tab:complete:(\\|*/|)pydoc:argument-rest
+# :fzf-tab:complete:(\\|*/|)pydoc(|3*):argument-rest
 case $group in
-option) ;;
+option)
+  ;;
 *)
   pydoc $word | bat --color=always -plman
   ;;
